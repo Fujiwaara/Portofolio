@@ -56,7 +56,6 @@ body::before {
     left: 50%;
     width: 300px;
     height: 400px;
-    background: #fff;
     border-radius: 10px;
     transform: translateX(-50%) translateY(calc(50px * var(--i))) rotate(40deg) skew(-20deg, -10deg) scale(0.6);
     box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.2);
@@ -75,6 +74,7 @@ body::before {
 
 .c1 {
     font-family: 'Calligraffitti', cursive;
+    background: #fff;
 }
 
 .btn {
@@ -82,8 +82,7 @@ body::before {
     justify-content: center;
     align-items: center;
     width: 180px;
-    height: 60px;
-    
+    height: 60px;    
     margin: 30px auto 0 auto;
     background: none;
     font-weight: 700;
@@ -101,6 +100,7 @@ body::before {
 
 .c2 {
     font-family: "Century Gothic";
+    background: #fff;
 }
 
 .btn-a {
@@ -108,8 +108,7 @@ body::before {
     justify-content: center;
     align-items: center;
     width: 180px;
-    height: 60px;
-    
+    height: 60px;    
     margin: 30px auto 0 auto;
     background: none;
     border: 4px solid;
@@ -156,6 +155,7 @@ body::before {
 
 .c3 {
     font-family: "Semplicite";
+    background: #fff;
 }
 
 .c3 h2, .c3 p {
@@ -203,10 +203,6 @@ body::before {
     background-image: url(../images/background-page.png);
 }
 
-.container:hover .c2 {
-
-}
-
 .container:hover .c3 {
     background: #000957;
 }
@@ -247,6 +243,14 @@ body::before {
         transform: initial;
         margin: 20px;
         opacity: 1 !important;
+    }
+
+    .c1 {
+        background-image: url(../images/background-page.png);
+    }
+    
+    .c3 {
+        background: #000957;
     }
 
     .container:hover,
