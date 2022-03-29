@@ -5,54 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réalisation</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/realisation.css">
+    <script src="https://kit.fontawesome.com/2d103221a9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav">        
-        <div class="navigation-wrapper">
-            <div class="navigation-button">
+        <div class="nav-container">
+            <div class="nav-button">
                 <i class="fa fa-bars"></i>
             </div>
-            <div class="navigation-menu">
+            <div class="nav-menu">
                 <ul>
-                    <li><a href="../index.html">ACCUEIL</a></li>
-                    <li><a href="#">RÉALISATION</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="">LOCATION</a></li>
-                    <li><a href="">TESTIMONIAL</a></li>
-                    <li><a href="">PRICING</a></li>
+                    <li><a href="../index.html" class="menu-a">ACCUEIL</a></li>
+                    <li><a href="#" class="menu-a">RÉALISATION</a></li>
+                    <li><a href="" class="menu-a">CV</a></li>
+                    <li><a href="" class="menu-a">CONTACT</a></li>
                 </ul>
             </div>
         </div>        
     </nav>
 
-    <div class="container">
-        <div class="card c1" style="--i:-1;">
-            <div class="content" style="--j:1;">
+    <div class="card-container">
+        <div class="card card1-3 c1" style="--i:-1;">
+            <div class="card-content" style="--j:1;">
+                <img src="../images/Reservia_logo.svg" alt="Reservia" class="c1-title">
+                <p>Intégration en HTML / CSS d'une maquette d'un site de réservation de vacance de manière responsive</p>
+                <a href="https://fujiwaara.github.io/Andre-Zerdane_2_03112020/" target="blank" class="card-btn1">
+                    <div class="btn1-i">
+                        <i class="fas fa-glasses"></i>
+                    </div>
+                    <span class="btn1-span">Visiter le site</span>
+                </a>
+            </div>
+        </div>
+        <div class="card card1-3 c2" style="--i:0;">
+            <div class="card-content" style="--j:1;">
                 <h2>Chez Mélo</h2>
                 <p>Intégration en HTML / CSS d'un site vitrine de manière responsive avec une charte graphique imposée</p>
-                <a href="https://fujiwaara.github.io/TP_Foodtruck/" target="blank" class="btn">Visiter le site</a>
+                <a href="https://fujiwaara.github.io/TP_Foodtruck/" target="blank" class="card-btn2">Visiter le site</a>
             </div>
         </div>
-        <div class="card c2" style="--i:0;">
-            <div class="content" style="--j:2;">
+        <div class="card card1-3 c3" style="--i:1;">
+            <div class="card-content" style="--j:2;">
                 <h2>JavaScript client</h2>
                 <p>Génération de carte personnage selon les entrées utilisateur dans un formumaire</p>
-                <a href="https://fujiwaara.github.io/TP_JavaScript_client/" target="blank" class="btn-a">Visiter le site</a>
+                <a href="https://fujiwaara.github.io/TP_JavaScript_client/" target="blank" class="card-btn3">Visiter le site</a>
             </div>
         </div>
-        <div class="card c3" style="--i:1;">
-            <div class="content" style="--j:3;">
+
+        <div class="card card4-6 c4" style="--i:-1;">
+            <div class="card-content" style="--j:3;">
                 <h2>Authentification</h2>
                 <p>Interface de connexion, d'inscription et gestion des profils utilisateur en PHP</p>
-                <a href="http://andrezerdane.alwaysdata.net/TP_Connexion/" target="blank" class="inputsub">Visiter le site</a>
+                <a href="http://andrezerdane.alwaysdata.net/TP_Connexion/" target="blank" class="card-btn4">Visiter le site</a>
             </div>
         </div>
+        <div class="card card4-6 c2" style="--i:0;">
+            <div class="card-content" style="--j:1;">
+                <h2>Chez Mélo</h2>
+                <p>Intégration en HTML / CSS d'un site vitrine de manière responsive avec une charte graphique imposée</p>
+                <a href="https://fujiwaara.github.io/TP_Foodtruck/" target="blank" class="card-btn2">Visiter le site</a>
+            </div>
+        </div>
+        <div class="card card4-6 c3" style="--i:1;">
+            <div class="card-content" style="--j:2;">
+                <h2>JavaScript client</h2>
+                <p>Génération de carte personnage selon les entrées utilisateur dans un formumaire</p>
+                <a href="https://fujiwaara.github.io/TP_JavaScript_client/" target="blank" class="card-btn3">Visiter le site</a>
+            </div>
+        </div>        
     </div>
 
     <script src="../js/menu.js"></script>

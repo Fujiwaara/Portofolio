@@ -1,5 +1,5 @@
-var navButton = document.querySelector('.navigation-button');
-var navMenu = document.querySelector('.navigation-menu');
+var navButton = document.querySelector('.nav-button');
+var navMenu = document.querySelector('.nav-menu');
     
 function openMenu(event) {
     

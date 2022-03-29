@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap');
+
 @font-face {
     font-family: "Century Gothic";
     src: url(../Fonts/07558_CenturyGothic.ttf);
@@ -41,13 +44,13 @@ body::before {
     clip-path: circle(250px at center);
 }
 
-.container {
+.card-container {
     position: relative;
     width: 400px;
     height: 400px;
 }
 
-.container .card {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,14 +73,62 @@ body::before {
 
 .card p {
     font-size: 1.3rem;
+    line-height: 30px;
 }
 
 .c1 {
-    font-family: 'Calligraffitti', cursive;
     background: #fff;
+    font-family: "Raleway";
 }
 
-.btn {
+.c1-title {
+    height: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.card-btn1 {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin: 30px auto 0 auto;
+    font-weight: bold;  
+    cursor: pointer;
+    color: black;
+}
+
+.card-btn1:hover {
+    transition-duration: 1s;
+    background-color: #0065FC;
+}
+
+.btn1-i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    margin: -3px;
+    color: #0065FC;
+    font-size: 18px;
+}
+
+.btn1-span {
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.c2 {
+    font-family: 'Calligraffitti', cursive;
+    background: #fff;
+    opacity: 0.8;
+}
+
+.card-btn2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,17 +144,18 @@ body::before {
     color: black;
 }
 
-.btn:hover {
+.card-btn2:hover {
     color: #984a44;
     border-top: solid #984a44;
 }
 
-.c2 {
+.c3 {
     font-family: "Century Gothic";
     background: #fff;
+    opacity: 0.6;
 }
 
-.btn-a {
+.card-btn3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +173,7 @@ body::before {
 }
 
 /* Création des deux petits éléments qui serviront à l'animation des boutons */
-.btn-a::before, .btn-a::after {
+.card-btn3::before, .card-btn3::after {
     content: "";
     position: absolute;
     width: 14px;
@@ -132,37 +184,37 @@ body::before {
 }
 
 /* Placement des deux petits éléments qui serviront à l'animation des boutons */
-.btn-a::before {
+.card-btn3::before {
     top: -5px;
     left: 10%;
 }
 
-.btn-a::after {
+.card-btn3::after {
     bottom: -5px;
     right: 10%;
 }
 /**/
 
 /* Animation des deux petits éléments */
-.btn-a:hover::before {
+.card-btn3:hover::before {
     left: 80%;
 }
 
-.btn-a:hover::after {
+.card-btn3:hover::after {
     right: 80%;
 }
 /**/
 
-.c3 {
+.c4 {
     font-family: "Semplicite";
     background: #fff;
 }
 
-.c3 h2, .c3 p {
+.c4 h2, .c4 p {
     color: white;
 }
 
-.inputsub {
+.card-btn4 {
     font-family: "Semplicite";
     border: 0;
     background: none;
@@ -178,36 +230,42 @@ body::before {
     cursor: pointer;
 }
 
-.inputsub:hover {
+.card-btn4:hover {
     background: #EBE645b3;
 }
 
-.container .card:nth-child(2) {
-    opacity: 0.8;
+.card-container:hover {
+    width: 1000px;
+    height: 850px;
 }
 
-.container .card:nth-child(3) {
-    opacity: 0.6;
-}
-
-.container:hover .card {
+.card-container:hover .card1-3 {
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 1;
     opacity: 1;
-    transform: translateX(calc(-50% + calc(350px * var(--i)))) translateY(-50%) rotate(0deg) skew(0deg, 0deg) scale(1);
+    transform: translateX(calc(-50% + calc(350px * var(--i)))) translateY(-110%) rotate(0deg) skew(0deg, 0deg) scale(1);
 }
 
-.container:hover .c1 {
-    background-image: url(../images/background-page.png);
+.card-container:hover .card4-6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(calc(-50% + calc(350px * var(--i)))) translateY(10%) rotate(0deg) skew(0deg, 0deg) scale(1);
 }
 
-.container:hover .c3 {
+.card-container:hover .c2 {
+    background-image: url(../images/background-chezMelo.png);
+}
+
+.card-container:hover .c4 {
     background: #000957;
 }
 
-.container .card .content {
+.card-content {
     position: relative;
     padding: 25px;
     color: #333;
@@ -215,7 +273,7 @@ body::before {
     transition: 0.5s;
 }
 
-.container:hover .card .content {
+.card-container:hover .card-content {
     opacity: 1;
     transition-delay: calc(0.2s * var(--j));
     transform: translateY(0px);
@@ -226,7 +284,7 @@ body::before {
         clip-path: circle(0px at center);
     }
 
-    .container {
+    .card-container {
         width: 100%;
         height: initial;
         padding: 20px;
@@ -236,7 +294,12 @@ body::before {
         flex-wrap: wrap;
     }
 
-    .container .card {
+    .card-container:hover {
+        width: 100%;
+        height: initial;
+    }
+
+    .card {
         position: relative;
         top: initial;
         left: initial;
@@ -245,23 +308,23 @@ body::before {
         opacity: 1 !important;
     }
 
-    .c1 {
-        background-image: url(../images/background-page.png);
+    .c2 {
+        background-image: url(../images/background-chezMelo.png);
     }
     
-    .c3 {
+    .c4 {
         background: #000957;
     }
 
-    .container:hover,
-    .container:hover .card {
+    .card-container:hover,
+    .card-container:hover .card {
         position: relative;
         top: initial;
         left: initial;
         transform: initial;
     }
 
-    .container .card .content {
+    .card-content {
         transform: initial;
         opacity: 1;
     }
